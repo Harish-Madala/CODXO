@@ -1,0 +1,174 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: #f0f0f0;
+}
+
+.header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00d4ff;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    padding: 50px 0;
+    text-align: center;
+    background-color: #0f0442; 
+    color: white;
+}
+
+.tribute-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid white; 
+    object-fit: cover; 
+    margin-bottom: 20px; 
+}
+
+.hero-text h2 {
+    font-size: 2.5em;
+    margin: 0;
+    color: white; 
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin: 5px 0;
+    color: #f0f0f0; 
+}
+
+.bio, .timeline, .career-highlights, .legacy, .fan-tributes, .video-highlights, .photo-gallery, .career-stats {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Styles */
+.card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: #1e3c72;
+    border: 1px solid #00d4ff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Video Highlights */
+.video-highlights {
+    padding: 20px;
+    text-align: center;
+}
+
+.video-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Fan Tributes */
+.fan-tributes {
+    text-align: center;
+}
+
+.tribute-form input, .tribute-form textarea {
+    width: calc(100% - 20px);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+.tribute-form button {
+    padding: 10px 20px;
+    background-color: #00d4ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.tribute-form button:hover {
+    background-color: #1e3c72;
+}
+
+/* Gallery */
+.photo-gallery {
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    position: relative;
+}
